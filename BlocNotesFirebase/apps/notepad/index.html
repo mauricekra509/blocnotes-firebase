@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Service Activity Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Daily Service Activity Tracker</h1>
+    </header>
+    <main>
+        <div class="calendar-container">
+            <label for="date-picker">Select Date:</label>
+            <input type="date" id="date-picker" />
+        </div>
+        <section id="services-container" class="services-container">
+            <!-- Services will be dynamically generated here -->
+        </section>
+        <div class="form-container">
+            <h2>Add New Activity</h2>
+            <form id="activity-form">
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="Production">Production</option>
+                    <option value="Electricity">Maintenance - Electricity</option>
+                    <option value="Instrumentation">Maintenance - Instrumentation</option>
+                    <option value="Mechanics">Maintenance - Mechanics</option>
+                    <option value="HVAC">Maintenance - HVAC</option>
+                </select>
+
+                <label for="activity">Activity Description:</label>
+                <input type="text" id="activity" name="activity" placeholder="Enter activity..." required>
+
+                <label for="attachment">Attach a File (optional):</label>
+                <input type="file" id="attachment" name="attachment">
+
+                <button type="submit">Add Activity</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 - Your Company</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
